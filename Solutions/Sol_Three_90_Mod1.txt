@@ -1,0 +1,7 @@
+Time: 0.20875
+Lx: 5.4
+Ly: 7
+Id TipoPieza x y ángulo
+0 0 0 2 0
+1 1 0 7 0
+2 2 5.4 1.6 90

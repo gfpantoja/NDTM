@@ -1,0 +1,8 @@
+Time: 0.26731
+Lx: 24
+Ly: 13
+Id TipoPieza x y ángulo
+0 0 0 8 0
+1 1 12 6 0
+2 2 14 4 180
+3 3 0 5 0
