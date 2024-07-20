@@ -2103,7 +2103,7 @@ void ResetearVariablesGlobales() {
     Ly = 0.0f;
     minLx = -1.0f;
     maxLx = 0.0f;
-    fileName = "";
+    //fileName = "";
     timeIni = std::chrono::system_clock::now();
 
     tiposPieza.clear();
