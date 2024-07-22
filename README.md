@@ -3,12 +3,13 @@
 This repository consists of complementary material from the article titled "The Normalized Direct Trigonometry Model for the Two-Dimensional Irregular Strip Packing Problem," developed by German Pantoja-Benavides, David Álvarez Martínez, and Francisco Parreño Torres.
 
 In the "Instances" folder, you will find the .txt files of the instances used with the following format:
-Strip'sWidth NumberOfTypeOfPieces
+-Strip'sWidth NumberOfTypeOfPieces
+
 Then, for each type of piece, the format is as follows:
-NumberOfDuplicates NumberOfConvexParts NumberOfVertices NumberOfValidOrientations
-Orientations separated by spaces
-List of the index of the vertices that form the convex parts, one line per each convex part
-The coordinates of the vertices (x,t) of all vertices that form the irregular piece
+-NumberOfDuplicates NumberOfConvexParts NumberOfVertices NumberOfValidOrientations
+-Orientations separated by spaces
+-List of the index of the vertices that form the convex parts, one line per each convex part
+-The coordinates of the vertices (x,t) of all vertices that form the irregular piece
 
 In the "Solutions" folder, you will find two subfolders: "Images" and "texFiles." In the former, you will find the visual representation of the solutions. In the latter, you will find the .txt files of the found solutions.
 
