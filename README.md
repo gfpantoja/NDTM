@@ -1,6 +1,6 @@
 # NDTM
 
-This repository consists of complementary material from the article titled "The Normalized Direct Trigonometry Model for the Two-Dimensional Irregular Strip Packing Problem," developed by German Pantoja-Benavides, David Álvarez Martínez, and Francisco Parreño Torres.
+This repository consists of complementary material from the article titled "The Normalized Direct Trigonometry Model for the Two-Dimensional Irregular Strip Packing Problem," developed by German Pantoja-Benavides, David Álvarez Martínez, and Francisco Parreño Torres. DOI: 10.3390/math12152414
 
 In the "Instances" folder, you will find the .txt files of the instances used with the following format:
 -Strip'sWidth NumberOfTypeOfPieces
