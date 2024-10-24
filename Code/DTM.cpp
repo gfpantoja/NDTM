@@ -1199,13 +1199,21 @@ void DTM(Solucion& sol) {
 
         i = 0;
         for (vector<TipoPieza>::iterator t_it = tiposPieza.begin(); t_it < tiposPieza.end(); ++t_it, ++i) {
-            for (int k = 1; k < (*t_it).cantidad0; ++k) {
-                for (int j1 = 0; j1 < (*t_it).piezas.size(); ++j1) {
-                    for (int j2 = 0; j2 < (*t_it).piezas.size(); ++j2) {
-                        model.add(x[i][j1][k] + maxLx * (1 - w[i][j1][k]) >= x[i][j2][k - 1] - maxLx * (1 - w[i][j2][k - 1])); // Simetr�a
+            for (int j = 0; j < (*t_it).piezas.size(); ++j) {
+                for (int k1 = 1; k1 < (*t_it).cantidad0; ++k1) {
+                    for (int k2 = 0; k2 < k1; ++k2) {
+                        model.add(x[i][j][k1] + maxLx * (1 - w[i][j][k1]) >= x[i][j][k2] - maxLx * (1 - w[i][j][k2])); // Simetría
                     }
                 }
             }
+            //for (int k = 1; k < (*t_it).cantidad0; ++k) {
+            //    for (int j1 = 0; j1 < (*t_it).piezas.size(); ++j1) {
+            //        for (int j2 = 0; j2 < (*t_it).piezas.size(); ++j2) {
+            //            model.add(x[i][j1][k] + maxLx * (1 - w[i][j1][k]) >= x[i][j2][k - 1] - maxLx * (1 - w[i][j2][k - 1])); // Simetr�a
+            //        }
+            //    }
+            //}
+            
         }
 
         // Par�metros de ejecuci�n
